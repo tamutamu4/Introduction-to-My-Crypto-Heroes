@@ -1,0 +1,158 @@
+/* フォント */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Orbitron:wght@400..900&family=Rouge+Script&family=Zen+Antique+Soft&display=swap');
+
+html {
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* ヘッダー */
+header {
+    padding: 15px 0;
+    background-color: #16213e;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header_menu li {
+    margin-left: 40px;
+    list-style: none;
+}
+
+.header_menu li a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.3s;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.header_menu li a:hover {
+    color: #80BA4A;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* メインセクション */
+.section {
+    position: relative;
+    padding: 80px 0;
+}
+
+.section h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #80BA4A;
+    margin-bottom: 30px;
+}
+
+.section p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #cfcfcf;
+    margin-bottom: 30px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 500;
+    color: #80BA4A;
+    margin-bottom: 24px;
+}
+
+/* ボタンスタイル */
+.button {
+    background-color: #80BA4A;
+    color: #1a1a2e;
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #5d9737;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+/* 三角形デザイン */
+.triangle {
+    background-color: #0f3460;
+    width: 100%;
+    height: 700px;
+    max-height: 700px;
+    position: absolute;
+    clip-path: polygon(0 0 , 0 120%,110% 0);
+    z-index: -1;
+}
+
+/* 画像スタイル */
+.section img {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    max-width: 35%;
+    opacity: 90%;
+    transition: 0.3s;
+}
+
+.section img:hover {
+    transform: scale(1.05);
+}
+
+/* GamePlayセクション */
+.Gameplay h1 {
+    font-size: 48px;
+    border-bottom: 2px solid #80BA4A;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    color: #80BA4A;
+}
+
+.Gameplay h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.Gameplay p {
+    margin-bottom: 80px;
+    color: #b0b0b0;
+}
+
+.Gameplay img {
+    position: absolute;
+    right: 0;
+    height: 100px;
+    opacity: 0.6;
+    filter: grayscale(50%);
+}
+
+.Gameplay {
+    margin-top: 250px; /* トップマージンを追加して、Gameplayセクションがtriangleの下に配置されるようにする */
+    padding-top: 50px; /* Gameplayセクションの内側に余白を追加 */
+}
